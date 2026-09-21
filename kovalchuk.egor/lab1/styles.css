@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  font-family: system-ui, sans-serif;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.flag {
+  position: relative;
+  width: min(90vw, 600px);
+  aspect-ratio: 10 / 6;
+  background-color: #006a4e;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.2);
+}
+
+.flag-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  aspect-ratio: 1 / 1;
+  background-color: #f42a41;
+  border-radius: 50%;
+}
+
+.flag-caption {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #333;
+  white-space: nowrap;
+}
