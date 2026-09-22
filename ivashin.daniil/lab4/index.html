@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игры и платформы</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <h1>Игры и платформы</h1>
+
+      <form class="game-form" data-testid="entity-form">
+        <label>
+          Название игры
+          <input
+            name="title"
+            type="text"
+            placeholder="Например, Portal"
+            required
+          />
+        </label>
+        <label>
+          Год выпуска
+          <input
+            name="releaseYear"
+            type="number"
+            min="1950"
+            max="2100"
+            placeholder="2007"
+            required
+          />
+        </label>
+        <button type="submit">Добавить игру</button>
+      </form>
+
+      <section
+        class="game-list"
+        data-testid="entity-list"
+        aria-label="Список игр"
+      ></section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
