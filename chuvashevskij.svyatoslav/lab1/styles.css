@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.registration {
+  width: 400px;
+  padding: 8px;
+}
+
+.registration__button {
+  background-color: #0056ff;
+  color: white;
+  width: 100%;
+}
+
+.registration__button:hover {
+  background-color: #417ffb;
+}
+
+.registration__input {
+  width: 100%;
+}
