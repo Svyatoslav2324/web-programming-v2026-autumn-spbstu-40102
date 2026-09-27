@@ -5,7 +5,7 @@ export function analyzeString(str) {
   let spaces = 0;
   let other = 0;
 
-  for (let char of str) {
+  for (const char of str) {
     if (/[a-zA-Zа-яА-ЯёЁ]/.test(char)) {
       letters++;
     } else if (/\d/.test(char)) {
