@@ -6,14 +6,14 @@ export function analyzieString(str) {
   let other = 0;
 
   for (const char of str) {
-    if (/[a-zA-Zа-яА-ЯёЁ]/.test(char)) {
-      letters++;
-    } else if (/\d/.test(char)) {
-      digits++;
-    } else if (/\s/.test(char)) {
-      spaces++;
+    if (/\p{L}/u.test(char)) {
+        letters++;
+    } else if (/\p{N}/u.test(char)) {
+        digits++;
+    } else if (char === " ") {
+        spaces++;
     } else {
-      other++;
+        other++;
     }
   }
 
