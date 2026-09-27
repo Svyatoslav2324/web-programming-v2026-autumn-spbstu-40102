@@ -1,5 +1,5 @@
 // Экспортируйте отсюда функцию с именем из контракта вашего варианта.
-export function analyzeString(str) {
+export function analyzieString(str) {
   let letters = 0;
   let digits = 0;
   let spaces = 0;
