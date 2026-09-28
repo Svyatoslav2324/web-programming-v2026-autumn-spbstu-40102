@@ -7,13 +7,13 @@ export function analyzieString(str) {
 
   for (const char of str) {
     if (/\p{L}/u.test(char)) {
-        letters++;
+      letters++;
     } else if (/\p{N}/u.test(char)) {
-        digits++;
-    } else if (char === " ") {
-        spaces++;
+      digits++;
+    } else if (char === ' ') {
+      spaces++;
     } else {
-        other++;
+      other++;
     }
   }
 
